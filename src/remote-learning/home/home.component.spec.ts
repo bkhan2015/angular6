@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import { AppComponent } from './home.component';
+import {describe} from 'selenium-webdriver/testing';
+import {expect} from '@angular/core/testing/src/testing_internal';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
