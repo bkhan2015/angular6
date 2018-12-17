@@ -1,21 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
-import { HomeComponent } from './home/home.component';
-import {RemoteLearningMainComponent} from './home/RemoteLearning.MainComponent';
-import { StudentRegistrationComponent } from './student-registration/student-registration.component';
-import {MainRouting} from './router/RemoteLearning.MainRouting';
+import { HomeComponent } from './home.component';
+import { RemoteLearningMainComponent } from './RemoteLearning.MainComponent';
+import { MainRouting } from '../router/RemoteLearning.MainRouting';
 
 @NgModule({
   declarations: [
     HomeComponent,
     RemoteLearningMainComponent,
-    StudentRegistrationComponent
   ],
   imports: [
    RouterModule.forRoot(MainRouting),
     BrowserModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [RemoteLearningMainComponent]
